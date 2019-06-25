@@ -1,0 +1,14 @@
+.DS_Store
+thumbs.db
+._*
+*.synctex(busy)
+*.gz
+*.bbl
+*.aux
+*.blg
+*.dvi
+*.log
+*.nav
+*.out
+*.snm
+*.toc
