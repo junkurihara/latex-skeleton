@@ -1,13 +1,15 @@
+%%%%%%%%% PLEASE COMPILE WITH UPLATEX!!!
+%#!uplatex
 %#BIBTEX pbibtex slides
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt,dvipdfmx]{beamer}
+\documentclass[12pt,dvipdfmx,uplatex]{beamer}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % pdfの栞・プロパティの字化けを防ぐ
-\usepackage{atbegshi}
-%\AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}} %Windows
-\AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}} %Linux, Mac
+\usepackage{pxjahyper}
+
+%%%%%%%%%%%%%%%
 \usepackage{hyperref}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
@@ -219,6 +221,7 @@
 %%%
 %%%  日本語フォントをゴシックに、数式フォントを太字に変更する
 %%%
+\usepackage[deluxe, expert]{otf} % フォントの多ウェイト化
 \renewcommand{\kanjifamilydefault}{\gtdefault}
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -260,7 +263,9 @@
 \section{はじめに}
 \begin{frame}
  \frametitle{はじめに}
-ICN Survey\cite{Ahlgren2012}
+ICNのサーベイ論文 \cite{Ahlgren2012}
+
+\textbf{太字}
 \end{frame}
 
 \begin{frame}
